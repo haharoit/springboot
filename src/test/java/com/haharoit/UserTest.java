@@ -1,7 +1,7 @@
 package com.haharoit;
 
 
-import com.haharoit.controller.UserController;
+import com.haharoit.controller.Swagger2UserController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,7 +37,7 @@ public class UserTest {
 
     @Before
     public void setUp(){
-        mvc = MockMvcBuilders.standaloneSetup(new UserController()).build();
+        mvc = MockMvcBuilders.standaloneSetup(new Swagger2UserController()).build();
     }
 
     @Test
@@ -56,8 +56,12 @@ public class UserTest {
                 .param("id", "1")
                 .param("name", "测试大师")
                 .param("age", "20");
+        System.out.println(mvc.perform(request)
+                .andReturn().getModelAndView());
         mvc.perform(request)
                 .andExpect(content().string(equalTo("success")));
+
+
 
         // 3、get获取user列表，应该有刚才插入的数据
         request = get("/users/");
