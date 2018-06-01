@@ -1,7 +1,7 @@
-package com.haharoit.controller;
+package com.haharoit.web;
 
 
-import com.haharoit.entity.User;
+import com.haharoit.domain.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;

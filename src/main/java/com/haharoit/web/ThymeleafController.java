@@ -1,4 +1,4 @@
-package com.haharoit.controller;
+package com.haharoit.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

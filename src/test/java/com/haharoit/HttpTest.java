@@ -1,6 +1,6 @@
 package com.haharoit;
 
-import com.haharoit.controller.HelloController;
+import com.haharoit.web.HelloController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
