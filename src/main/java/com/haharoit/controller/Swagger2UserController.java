@@ -13,7 +13,8 @@ import java.util.*;
  * @Description: Spring Boot中使用Swagger2构建RESTful APIs
  * @author haharoit
  * @version 1.0.0
- * @date 2018-05-30.
+ * @createtime 2018-05-30 pm
+ * @updatetime 2018-05-31 am
  * @blog
  */
 @RestController

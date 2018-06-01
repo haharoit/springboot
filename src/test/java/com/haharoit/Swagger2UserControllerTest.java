@@ -29,9 +29,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = MockServletContext.class)
+@SpringBootTest
 @WebAppConfiguration
-public class UserTest {
+public class Swagger2UserControllerTest {
 
     private MockMvc mvc;
 
